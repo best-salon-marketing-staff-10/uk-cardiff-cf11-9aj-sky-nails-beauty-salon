@@ -61,25 +61,25 @@ serviceList
 const businessOpeningTimeInput = {
   //Thời gian làm việc của tiệm
   monOpeningTime: "09:00",
-  monClosingTime: "18:30",
+  monClosingTime: "18:00",
 
   tueOpeningTime: "09:00",
-  tueClosingTime: "18:30",
+  tueClosingTime: "18:00",
 
   wedOpeningTime: "09:00",
-  wedClosingTime: "18:30",
+  wedClosingTime: "18:00",
 
   thuOpeningTime: "09:00",
-  thuClosingTime: "18:30",
+  thuClosingTime: "18:00",
 
   friOpeningTime: "09:00",
-  friClosingTime: "18:30",
+  friClosingTime: "18:00",
 
   satOpeningTime: "09:00",
-  satClosingTime: "18:30",
+  satClosingTime: "18:00",
 
-  sunOpeningTime: "10:00",
-  sunClosingTime: "16:00",
+  sunOpeningTime: "",
+  sunClosingTime: "",
 }
 
 const processedBusinessOpeningTime = {
@@ -91,49 +91,49 @@ const processedBusinessOpeningTime = {
   workingTimeThu: "Thursday: " + businessOpeningTimeInput.thuOpeningTime + "–" + businessOpeningTimeInput.thuClosingTime,
   workingTimeFri: "Friday: " + businessOpeningTimeInput.friOpeningTime + "–" + businessOpeningTimeInput.friClosingTime,
   workingTimeSat: "Saturday: " + businessOpeningTimeInput.satOpeningTime + "–" + businessOpeningTimeInput.satClosingTime,
-  workingTimeSun: "Sunday: " + businessOpeningTimeInput.sunOpeningTime + "–" + businessOpeningTimeInput.sunClosingTime,
+  workingTimeSun: "Sunday: Closed " + businessOpeningTimeInput.sunOpeningTime + "" + businessOpeningTimeInput.sunClosingTime,
 }
 
 const changedInfo = {   
-  businessName: "Top Nails Exeter",
-  businessAddressLevel1: "91 South St",
-  businessAddressLevel2: "Exeter",
-  businessAddressLevel3: "Devon",
+  businessName: "Sky Nails Beauty Salon",
+  businessAddressLevel1: "203 Cowbridge Road East",
+  businessAddressLevel2: "Cardiff",
+  businessAddressLevel3: "Glamorgan",
   businessAddressLevel4: "England",
   businessCountry: "United Kingdom",
   businessGeoRegionCode: "GB",
 
   //Tra cứu tên thành phố trong https://www.geonames.org/GB/administrative-division-united-kingdom.html và điền vào mã code tương ứng
-  businessAddressDivisionCode: "DEV",
+  businessAddressDivisionCode: "VGL",
 
-  businessPostCode: "EX1 1EN",
+  businessPostCode: "CF11 9AJ",
   
 
-  businessPhoneNumber: "07990099119",
+  businessPhoneNumber: "02920197660",
 
   //Website tiệm KO có dấu / ở cuối
-  businessWebsite: "https://topnailsspa.web.app",
+  businessWebsite: "https://skynailsbeautysalon.web.app",
 
   linkBookingMap: "",
-  linkBookingApp: "https://bit.ly/3DlalQ9",
-  linkToMap: "https://goo.gl/maps/E3L6BSckRXskgFZM6",
+  linkBookingApp: "https://bit.ly/3rN4LEe",
+  linkToMap: "https://maps.app.goo.gl/xQopmMMuUDpoS8Sq5",
 
   
 
   //Mở Google Maps tiệm, zoom sát vào, chuột phải 
-  geoLatitude: 50.72184934651579,
-  geoLongitude: -3.5320541688670217,
+  geoLatitude: 51.48138095534341,
+  geoLongitude: -3.1982432085357453,
 
   //Code xác minh của website trên Google Search
   metaGoogleSiteVerification: "",
 
-  //iframe map
-  iframeMapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157.86884291777412!2d-3.5320457869639674!3d50.721766777876155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da5f0d2d28c6f%3A0x1c735b97caf06780!2sTop%20Nails%20Exeter!5e0!3m2!1sen!2sus!4v1689822239913!5m2!1sen!2sus",
+  //iframe map 
+  iframeMapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155.29600400027638!2d-3.1982442143646264!3d51.48135882258022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1b577a7989f5%3A0xab2d6d45c45e6a0a!2s203%20Cowbridge%20Rd%20E%2C%20Cardiff%20CF11%209AJ%2C%20UK!5e0!3m2!1sen!2sus!4v1697451071663!5m2!1sen!2sus",
 
   // Các ảnh của tiệm
-  ogImage:"https://topnailsexeter.web.app/images/desktop-nail-salon-happy-customer-1-2.jpg",
-  icon:"/icon-2.jpg",
-  businessLogo:"/logo-2.jpg",
+  ogImage:"https://skynailsbeautysalon.web.app/images/desktop-nail-salon-happy-customer-1.jpg",
+  icon:"/icon.jpg",
+  businessLogo:"/logo.jpg",
 }
 
 const menu = {
@@ -379,26 +379,26 @@ const schemaInput = {
   schemaPostalCode: changedInfo.businessPostCode,
   schemaAddressCountry: changedInfo.businessGeoRegionCode,
 
-  schemaImage1: "/images/nail-extension-1-2.jpg",
-  schemaImage2: "/images/nail-extension-2-2.jpg",
-  schemaImage3: "/images/nail-extension-3-2.jpg",
-  schemaImage4: "/images/nail-extension-4-2.jpg",
-  schemaImage5: "/images/nail-extension-5-2.jpg",
-  schemaImage6: "/images/gel-nails-shellac-nails-1-2.jpg",
-  schemaImage7: "/images/gel-nails-shellac-nails-2-2.jpg",
-  schemaImage8: "/images/gel-nails-shellac-nails-3-2.jpg",
-  schemaImage9: "/images/gel-nails-shellac-nails-4-2.jpg",
-  schemaImage10: "/images/gel-nails-shellac-nails-5-2.jpg",
-  schemaImage11: "/images/nail-design-1-2.jpg",
-  schemaImage12: "/images/nail-design-2-2.jpg",
-  schemaImage13: "/images/nail-design-3-2.jpg",
-  schemaImage14: "/images/nail-design-4-2.jpg",
-  schemaImage15: "/images/nail-design-5-2.jpg",
-  schemaImage16: "/images/pedicure-1-2.jpg",
-  schemaImage17: "/images/pedicure-2-2.jpg",
-  schemaImage18: "/images/pedicure-3-2.jpg",
-  schemaImage19: "/images/pedicure-4-2.jpg",
-  schemaImage20: "/images/pedicure-5-2.jpg",
+  schemaImage1: "/images/nail-extension-1.jpg",
+  schemaImage2: "/images/nail-extension-2.jpg",
+  schemaImage3: "/images/nail-extension-3.jpg",
+  schemaImage4: "/images/nail-extension-4.jpg",
+  schemaImage5: "/images/nail-extension-5.jpg",
+  schemaImage6: "/images/gel-nails-shellac-nails-1.jpg",
+  schemaImage7: "/images/gel-nails-shellac-nails-2.jpg",
+  schemaImage8: "/images/gel-nails-shellac-nails-3.jpg",
+  schemaImage9: "/images/gel-nails-shellac-nails-4.jpg",
+  schemaImage10: "/images/gel-nails-shellac-nails-5.jpg",
+  schemaImage11: "/images/nail-design-1.jpg",
+  schemaImage12: "/images/nail-design-2.jpg",
+  schemaImage13: "/images/nail-design-3.jpg",
+  schemaImage14: "/images/nail-design-4.jpg",
+  schemaImage15: "/images/nail-design-5.jpg",
+  schemaImage16: "/images/pedicure-1.jpg",
+  schemaImage17: "/images/pedicure-2.jpg",
+  schemaImage18: "/images/pedicure-3.jpg",
+  schemaImage19: "/images/pedicure-4.jpg",
+  schemaImage20: "/images/pedicure-5.jpg",
 
 
   schemaTelephone: changedInfo.businessPhoneNumber,
@@ -434,13 +434,13 @@ const schemaInput = {
 
   schemaPriceRange: "££",
   //Cần đổi tên khách
-  schemaPersonReviewAuthorName: "Danni Alcock",
-  //Xem điểm review trung bình của tiệm là bao nhiêu
+  schemaPersonReviewAuthorName: "",
+  //Xem điểm review trung bình của tiệm là bao nhiêu 
   schemaRatingValue: "5",
-  schemaBestRating: "5",
+  schemaBestRating: "",
 
-  schemaGeoLatitude: 50.72184934651579, 
-  schemaLongitude: -3.5320541688670217,
+  schemaGeoLatitude: 51.48138095534341,
+  schemaLongitude: -3.1982432085357453,
 
   schemaUrl: changedInfo.businessWebsite,
 
@@ -719,44 +719,44 @@ const button = {
 
 const images = {
   //Ảnh ở Homepage carousel
-  mobileCarouselImage1: "/images/mobile-nail-salon-happy-customer-1-2.jpg",
-  mobileCarouselImage2: "/images/mobile-nail-salon-happy-customer-2-2.jpg",
-  mobileCarouselImage3: "/images/mobile-nail-salon-happy-customer-3-2.jpg",
+  mobileCarouselImage1: "/images/mobile-nail-salon-happy-customer-1.jpg",
+  mobileCarouselImage2: "/images/mobile-nail-salon-happy-customer-2.jpg",
+  mobileCarouselImage3: "/images/mobile-nail-salon-happy-customer-3.jpg",
 
-  tabletCarouselImage1: "/images/tablet-nail-salon-happy-customer-1-2.jpg",
-  tabletCarouselImage2: "/images/tablet-nail-salon-happy-customer-2-2.jpg",
-  tabletCarouselImage3: "/images/tablet-nail-salon-happy-customer-3-2.jpg",
+  tabletCarouselImage1: "/images/tablet-nail-salon-happy-customer-1.jpg",
+  tabletCarouselImage2: "/images/tablet-nail-salon-happy-customer-2.jpg",
+  tabletCarouselImage3: "/images/tablet-nail-salon-happy-customer-3.jpg",
 
-  desktopCarouselImage1: "/images/desktop-nail-salon-happy-customer-1-2.jpg",
-  desktopCarouselImage2: "/images/desktop-nail-salon-happy-customer-2-2.jpg",
-  desktopCarouselImage3: "/images/desktop-nail-salon-happy-customer-3-2.jpg",
+  desktopCarouselImage1: "/images/desktop-nail-salon-happy-customer-1.jpg",
+  desktopCarouselImage2: "/images/desktop-nail-salon-happy-customer-2.jpg",
+  desktopCarouselImage3: "/images/desktop-nail-salon-happy-customer-3.jpg",
       //Ảnh ở Homepage khi vuốt xuống
-  section5Image1: "/images/nail-extension-1-2.jpg",
+  section5Image1: "/images/nail-extension-1.jpg",
 
-  section6Image1: "/images/nail-extension-2-2.jpg",
+  section6Image1: "/images/nail-extension-2.jpg",
 
-  section7Image1: "/images/nail-extension-3-2.jpg",
-  section7Image2: "/images/nail-extension-4-2.jpg",
+  section7Image1: "/images/nail-extension-3.jpg",
+  section7Image2: "/images/nail-extension-4.jpg",
 
-  LocationImage1: "/images/nail-extension-11-2.jpg",
+  LocationImage1: "/images/nail-extension-11.jpg",
 
-  serviceList1Image1: "/images/nail-extension-5-2.jpg",
-  serviceList1Image2: "/images/nail-extension-6-2.jpg",
-  serviceList1Image3: "/images/nail-extension-7-2.jpg",
-  serviceList1Image4: "/images/nail-extension-8-2.jpg",
-  serviceList1Image5: "/images/nail-extension-9-2.jpg",
+  serviceList1Image1: "/images/nail-extension-5.jpg",
+  serviceList1Image2: "/images/nail-extension-6.jpg",
+  serviceList1Image3: "/images/nail-extension-7.jpg",
+  serviceList1Image4: "/images/nail-extension-8.jpg",
+  serviceList1Image5: "/images/nail-extension-9.jpg",
 
-  serviceList2Image1: "/images/gel-nails-shellac-nails-1-2.jpg",
-  serviceList2Image2: "/images/gel-nails-shellac-nails-2-2.jpg",
-  serviceList2Image3: "/images/gel-nails-shellac-nails-3-2.jpg",
-  serviceList2Image4: "/images/gel-nails-shellac-nails-4-2.jpg",
-  serviceList2Image5: "/images/gel-nails-shellac-nails-5-2.jpg",
+  serviceList2Image1: "/images/gel-nails-shellac-nails-1.jpg",
+  serviceList2Image2: "/images/gel-nails-shellac-nails-2.jpg",
+  serviceList2Image3: "/images/gel-nails-shellac-nails-3.jpg",
+  serviceList2Image4: "/images/gel-nails-shellac-nails-4.jpg",
+  serviceList2Image5: "/images/gel-nails-shellac-nails-5.jpg",
   
-  serviceList3Image1: "/images/pedicure-1-2.jpg",
-  serviceList3Image2: "/images/pedicure-2-2.jpg",
-  serviceList3Image3: "/images/pedicure-3-2.jpg",
-  serviceList3Image4: "/images/pedicure-4-2.jpg",
-  serviceList3Image5: "/images/pedicure-5-2.jpg",
+  serviceList3Image1: "/images/pedicure-1.jpg",
+  serviceList3Image2: "/images/pedicure-2.jpg",
+  serviceList3Image3: "/images/pedicure-3.jpg",
+  serviceList3Image4: "/images/pedicure-4.jpg",
+  serviceList3Image5: "/images/pedicure-5.jpg",
 
   serviceList4Image1: "/images/hair-wash-1.jpg",
   serviceList4Image2: "/images/hair-wash-2.jpg",
@@ -764,11 +764,11 @@ const images = {
   serviceList4Image4: "/images/hair-wash-4.jpg",
   serviceList4Image5: "/images/hair-wash-5.jpg",
 
-  serviceList5Image1: "/images/nail-design-1-2.jpg",
-  serviceList5Image2: "/images/nail-design-2-2.jpg",
-  serviceList5Image3: "/images/nail-design-3-2.jpg",
-  serviceList5Image4: "/images/nail-design-4-2.jpg",
-  serviceList5Image5: "/images/nail-design-5-2.jpg",
+  serviceList5Image1: "/images/nail-design-1.jpg",
+  serviceList5Image2: "/images/nail-design-2.jpg",
+  serviceList5Image3: "/images/nail-design-3.jpg",
+  serviceList5Image4: "/images/nail-design-4.jpg",
+  serviceList5Image5: "/images/nail-design-5.jpg",
 
   serviceList6Image1: "/images/waxing-1.jpg",
   serviceList6Image2: "/images/waxing-2.jpg",
@@ -784,26 +784,26 @@ const images = {
 
   //Ảnh trang about cho 3 giao diện
 
-  mobileAboutUsImage1: "/images/mobile-nail-salon-1-2.jpg",
-  mobileAboutUsImage2: "/images/mobile-nail-salon-2-2.jpg",
-  mobileAboutUsImage3: "/images/mobile-nail-salon-3-2.jpg",
+  mobileAboutUsImage1: "/images/mobile-nail-salon-1.jpg",
+  mobileAboutUsImage2: "/images/mobile-nail-salon-2.jpg",
+  mobileAboutUsImage3: "/images/mobile-nail-salon-3.jpg",
 
-  tabletAboutUsImage1: "/images/tablet-nail-salon-1-2.jpg",
-  tabletAboutUsImage2: "/images/tablet-nail-salon-2-2.jpg",
-  tabletAboutUsImage3: "/images/tablet-nail-salon-3-2.jpg",
+  tabletAboutUsImage1: "/images/tablet-nail-salon-1.jpg",
+  tabletAboutUsImage2: "/images/tablet-nail-salon-2.jpg",
+  tabletAboutUsImage3: "/images/tablet-nail-salon-3.jpg",
 
-  desktopAboutUsImage1: "/images/desktop-nail-salon-1-2.jpg",
-  desktopAboutUsImage2: "/images/desktop-nail-salon-2-2.jpg",
-  desktopAboutUsImage3: "/images/desktop-nail-salon-3-2.jpg",
+  desktopAboutUsImage1: "/images/desktop-nail-salon-1.jpg",
+  desktopAboutUsImage2: "/images/desktop-nail-salon-2.jpg",
+  desktopAboutUsImage3: "/images/desktop-nail-salon-3.jpg",
 
-  desktopAboutUsDongVienImage1: "/images/nail-extension-15-2.jpg",
-  desktopAboutUsDongVienImage2: "/images/nail-extension-16-2.jpg",
-  desktopAboutUsDongVienImage3: "/images/nail-extension-17-2.jpg",
+  desktopAboutUsDongVienImage1: "/images/nail-extension-15.jpg",
+  desktopAboutUsDongVienImage2: "/images/nail-extension-16.jpg",
+  desktopAboutUsDongVienImage3: "/images/nail-extension-17.jpg",
 
     //Ảnh cho phần động viên
-  section1Image1: "/images/nail-extension-18-2.jpg",
-  section2Image1: "/images/nail-extension-19-2.jpg",
-  section3Image1: "/images/nail-extension-20-2.jpg",
+  section1Image1: "/images/nail-extension-18.jpg",
+  section2Image1: "/images/nail-extension-19.jpg",
+  section3Image1: "/images/nail-extension-20.jpg",
 
   //Thanh Mobile Bottom Nav
   BottomNavButton1Icon: "/images/icons/icon-home.png",
@@ -842,12 +842,12 @@ const images = {
   const serviceList1 = {
     service1: "Acrylic Fullset with normal nail polish",
     service1Time: "45 mins",
-    service1Price: "28",
+    service1Price: "33",
     service1Description: "Acrylics are a combination of a liquid monomer and a powder polymer that form a paste which is bonded to the natural nail. It's then given the desired shape, where it hardens in place to add strength, length, and thickness to the nail. Our " + seoKeyword.seoKeyword7 + " service help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
 
     service2: "Acrylic Infill with normal nail polish",
     service2Time: "35 mins",
-    service2Price: "20",
+    service2Price: "23",
     service2Description: "Infills are done when the natural part of your nail starts to show at the bottom of your fake nail. Instead of having all your nails taken off and redone, you just have the natural part filled in with acrylic or gel powder. Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
 
     service3: "Acrylic Full Set with Shellac",
@@ -882,12 +882,12 @@ const images = {
 
     service9: "Full Set Ombre",
     service9Time: "45 mins",
-    service9Price: "38",
+    service9Price: "40",
     service9Description: "You could be the Queen of the Ombre nails, with the right technique. The technicians at our " + seoKeyword.seoKeyword2 + " will masterfully blend one color into another, creating a unique and beautiful look, and adding it to your finger tips.",
 
     service10: "Infill Ombre",
     service10Time: "45 mins",
-    service10Price: "32",
+    service10Price: "28",
     service10Description: "Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
 
     service11: "Full Set Colour Powder",
@@ -900,19 +900,19 @@ const images = {
     service12Price: "23",
     service12Description: "This is our pampering nail service that will make you fall in love with your nails all over again! It involves filling in the gaps of previously applied color powder nails with the same color powder. This helps to maintain the appearance and prolong the life of your nails, ensuring a consistent and cohesive look.",
   
-    service13: "Infill Colour Powder (Different Colour)",
+    service13: "Infill Colour Powder",
     service13Time: "45 mins",
     service13Price: "25",
     service13Description: "A thrilling nail service that will make you feel refreshed and confident with a brand new color! Say goodbye to the same old look and hello to a bold new hue. Our talented technicians will fill in the gaps of your previously applied color powder nails with a stunning new shade, making you feel like you're walking on a fashion runway. Embrace the change and treat yourself to a little pampering session. You deserve it, gorgeous!",
 
     service14: "Acrylic Fullset on Feet with normal nail polish",
     service14Time: "45 mins",
-    service14Price: "35",
+    service14Price: "37",
     service14Description: "An acrylic extension on your toes is just the thing to give yourself a little extra pampering. Whether you just want to do something new for your nails or you’ve been looking for an excuse to treat yo-self. This could be a great option for you",
 
     service15: "Acrylic Infill on Feet with normal nail polish",
     service15Time: "45 mins",
-    service15Price: "30",
+    service15Price: "33",
     service15Description: "Our talented technicians will fill in the gaps of your previously applied acrylic nails on your feet finish with a smooth, gorgeous coat of normal nail polish. You'll leave feeling refreshed and confident with beautifully polished toes. So sit back, relax, and let us take care of you. You deserve a little self-care and pampering, lovely!",
 
     service16: "Acrylic Fullset on Feet with Shellac",
@@ -955,19 +955,19 @@ const images = {
     service23Price: "36",
     service23Description: "SNS Dipping Powder creates a stronger polish finish which can help strengthen brittle or weak nails. This innovative treatment will leave your hands looking fabulous, while also feeling lightweight and comfortable. The delicate touch of femininity will make you fall in love with yourself all over again. Indulge in a little pampering, and let our skilled technicians bring out the best in your nails. Get ready to feel confident, stylish, and beautiful with our Dipping Powder SNS.",
   
-    service24: "BIAB buider gel Fullset",
+    service24: "BIAB builder gel Fullset",
     service24Time: "35 mins",
     service24Price: "30",
     service24Description: "This service will leave your nails looking stunning and fabulous, making you feel confident and beautiful. The BIAB builder gel creates a long-lasting and durable finish for your nails, perfect for those who desire low maintenance and chip-free nails. Our skilled technicians will carefully apply the builder gel to create the look you desire, leaving you with salon-quality nails that will last for weeks. So, why not treat yourself and embrace the feeling of self-love by booking a BIAB Builder Gel Fullset today!",
-  
-    service25: "BIAB buider gel Infill",
+
+    service25: "BIAB builder gel Infill",
     service25Time: "40 mins",
-    service25Price: "25",
+    service25Price: "28",
     service25Description: "Our gentle and skilled technicians will ensure your nails receive the ultimate pampering, leaving them looking and feeling revitalized. Say goodbye to chips, cracks, and brittle nails, and hello to the confidence that comes with having beautiful and healthy nails. Give yourself the gift of self-care and love, and let us take care of the rest. Book your appointment today and fall in love with your nails all over again!",
 
-    service26: "Long nails (extra)",
+    service26: "Long nails (from)",
     service26Time: "",
-    service26Price: "3",
+    service26Price: "3/7/10",
     service26Description: "Indulge in a pampering session as we expertly extend the length of your nails to give you that extra edge of confidence. With delicate and precise care, you'll leave our salon feeling absolutely gorgeous. Treat yourself to a little bit of luxury, and allow us to create a stunning set of nails that will have you feeling loved and appreciated.",
 
     service27: "Single Toe Nails",
@@ -975,14 +975,14 @@ const images = {
     service27Price: "5",
     service27Description: "Give yourself the ultimate treat with a polished and stylish look for your toes. Experience a touch of luxury and let us take care of your toes with a flawless and stunning finish.",
 
-    service28: "Single nails repair",
+    service28: "Single nails repair (from)",
     service28Time: "",
-    service28Price: "3",
+    service28Price: "4",
     service28Description: "Our talented technicians will expertly fix any imperfections, leaving your nails looking and feeling beautiful again. You deserve to feel confident and stylish with every step you take, and we are here to make sure that happens. ",
 
     service29: "Take off Acrylic and Redone with normal nail polish",
     service29Time: "1 hr",
-    service29Price: "32",
+    service29Price: "38",
     service29Description: "Pamper yourself with a relaxing nail transformation that will leave you feeling refreshed and confident. Our skilled technicians will carefully remove any existing acrylic, followed by a revitalizing manicure. Finally, we will apply a stunning normal nail polish to give you a stunning and polished look. You deserve to love your nails, so come and experience the ultimate pampering session that will leave you feeling like a brand new woman!",
 
     service30: "Take off Acrylic and Redone with Shellac",
@@ -992,7 +992,7 @@ const images = {
 
     service31: "Take off Ombre and Redone Ombre Fullset",
     service31Time: "1 hr",
-    service31Price: "40",
+    service31Price: "45",
     service31Description: "Our talented technicians will carefully remove your current ombre look and transform your nails into a stunning work of art with a new and refreshed ombre design. You'll feel like a brand new woman, ready to conquer the world with confidence and grace. Love yourself and your nails with our expert touch.",
 
     service32: "Dipping Powder SNS infill",
@@ -1007,7 +1007,7 @@ const images = {
 
     service34: "Take off and Redone Acrylic Fullset on Feet with normal nail polish",
     service34Time: "1 hr",
-    service34Price: "38",
+    service34Price: "42",
     service34Description: "Let us transform your tired, dull feet into a stunning work of art. Our professional technicians use only the finest products to give you a pedicure that will leave you feeling refreshed, rejuvenated and ready to show off your beautiful feet. Love yourself, love your feet and treat yourself to our luxurious Take off and Redone Acrylic Fullset on Feet with normal nail polish today!",
 
     service35: "Take off and Redone Acrylic Fullset on Feet with Shellac",
@@ -1021,7 +1021,7 @@ const images = {
     service36Description: "Say hello to refreshed and beautifully polished nails that will make you feel confident and beautiful. Allow our skilled technicians to give you a luxurious spa experience, leaving you with stunning nails that will make you feel pampered and loved. Let us help you fall in love with yourself again, book your appointment now!",
 
     service37: "Take off and Redone Colour Powder",
-    servicce37Time: "60 mins",
+    service37Time: "60 mins",
     service37Price: "40",
     service37Description: "The ultimate treat for your nails! Let us pamper you with a luxurious experience as we remove your old powder and replace it with a new and vibrant shade. Our experienced technicians will make sure your nails look stunning and feel great, making you fall in love with your own hands again. This service is perfect for those who want to switch up their nail game and add a pop of color to their daily routine. Trust us, with this service, you'll feel confident and beautiful, ready to take on the world with a new-found love for yourself!",
 
@@ -1068,9 +1068,9 @@ const images = {
     service46Price: "35",
     service46Description: "",
 
-    service47: "Infill Colour Powder",
+    service47: "",
     service47Time: "45 mins",
-    service47Price: "30",
+    service47Price: "25",
     service47Description: "",
 
     service48: "COMBO TAKE OFF GEL COLOUR & COMBO GEL MANICURE & GEL PEDICURE",
@@ -1098,7 +1098,7 @@ const images = {
     service52Price: "5",
     service52Description: "",
 
-    service53: "French tip",
+    service53: "French tip (from)",
     service53Time: "10 mins",
     service53Price: "5",
     service53Description: "",
@@ -1165,7 +1165,7 @@ const images = {
 
     service68: "Infill Glitter Powder",
     service68Time: "45 mins",
-    service68Price: "30",
+    service68Price: "25",
     service68Description: "Unleash your inner sparkle with our nails service. Perfect for adding a touch of glamour to your already fabulous look, our expert technicians will carefully infill your nails with the latest in glitter powder technology, giving you a stunning, attention-grabbing manicure that you'll absolutely adore. Embrace your feminine side and love the way you feel with our nails service.",
 
     service69: "Full Set Permanent white tip",
@@ -1175,7 +1175,7 @@ const images = {
 
     service70: "Take off Acrylic + Shellac",
     service70Time: "40 mins",
-    service70Price: "32",
+    service70Price: "25",
     service70Description: "Say farewell to tired, worn out nails and embrace the beauty of a refreshed and revitalized set of nails. Our skilled technicians will carefully remove any Acrylic and Shellac, leaving your nails feeling rejuvenated. Indulge in the luxurious feeling of silky smooth, nourished nails that radiate confidence and beauty. Love the skin you're in and celebrate your natural beauty with our service.",
 
     service71: "Take off Builder gel and Redone a Newset",
@@ -1218,8 +1218,8 @@ const images = {
     service78Price: "10",
     service78Description: "",
 
-    service79: "Acrylic two Big toes",
-    service79Time: "10 mins",
+    service79: "Full Set Acrylic two Big toes",
+    service79Time: "30 mins",
     service79Price: "10",
     service79Description: "",
 
@@ -1228,15 +1228,55 @@ const images = {
     service80Price: "5",
     service80Description: "",
 
-    service81: "BIAB buider gel on natural nails",
+    service81: "BIAB builder gel on natural nails",
     service81Time: "60 mins",
-    service81Price: "30",
+    service81Price: "33",
     service81Description: "This service will leave your nails looking stunning and fabulous, making you feel confident and beautiful. The BIAB builder gel creates a long-lasting and durable finish for your nails, perfect for those who desire low maintenance and chip-free nails. Our skilled technicians will carefully apply the builder gel to create the look you desire, leaving you with salon-quality nails that will last for weeks. So, why not treat yourself and embrace the feeling of self-love by booking a BIAB Builder Gel Fullset today!",
 
     service82: "BIAB take off and Redone (extra)",
     service82Time: "60 mins",
     service82Price: "5",
     service82Description: "",
+ 
+    service83: "Infill Acrylic two Big toes",
+    service83Time: "20 mins",
+    service83Price: "8",
+    service83Description: "",
+
+    service84: "Take off and Redone Full Set Acrylic two Big toes",
+    service84Time: "45 mins",
+    service84Price: "13",
+    service84Description: "",
+
+    service85: "Take off + Manicure only",
+    service85Time: "45 mins",
+    service85Price: "18",
+    service85Description: "",
+
+    service86: "Change colour gel",
+    service86Time: "45 mins",
+    service86Price: "15",
+    service86Description: "",
+
+    service87: "Cut down (from)",
+    service87Time: "20 mins",
+    service87Price: "5",
+    service87Description: "",
+
+    service88: "Full Set Overlay",
+    service88Time: "30 mins",
+    service88Price: "30",
+    service88Description: "",
+
+    service89: "Infill Overlay",
+    service89Time: "20 mins",
+    service89Price: "23",
+    service89Description: "",
+
+    service90: "Take off and Redone Full Set Overlay",
+    service90Time: "45 mins",
+    service90Price: "35",
+    service90Description: "",
 
 
     };
@@ -1249,17 +1289,17 @@ const images = {
 
     service2: "Nail shape with Shellac nails on feet",
     service2Time: "30 mins",
-    service2Price: "22",
+    service2Price: "20",
     service2Description: "Our expert technicians will shape and polish your toes to perfection, leaving you with beautifully polished and well-groomed feet. With the long-lasting, chip-resistant Shellac polish, you can enjoy your stunning feet for weeks to come. Give yourself the gift of self-care and feel confident and stylish with every step.",
 
     service3: "Manicure Shellac",
     service3Time: "30 mins",
-    service3Price: "28",
+    service3Price: "25",
     service3Description: "Manicures are a difficult art to master. No matter how great they look when finished, they seem to always chip within days, if not in a matter of hours. Enter the Gel nail manicure - a groundbreaking technique that uses gel polishes that get 'cured' under UV lights. The result? Shiny, strong nails for weeks and no drying time!",
 
     service4: "Pedicure Shellac",
     service4Time: "45 mins",
-    service4Price: "35",
+    service4Price: "38",
     service4Description: "Highly recommended with Gel Colour. Last longer and less likely to chip! Fries instantly so you don't have to worry about smudging it.",
 
     service5: "Gel Polish Manicure & Pedicure",
@@ -1269,12 +1309,12 @@ const images = {
 
     service6: "Take off Shellac and Redone Gel Polish on Hand",
     service6Time: "30 mins",
-    service6Price: "25",
+    service6Price: "22",
     service6Description: "Pamper yourself with a polished and refreshed look for your nails. Our expert technicians will expertly remove your old shellac and reapply a beautiful gel polish that will leave your hands looking stunning and feeling silky smooth. Treat yourself to a little self-love and let us help you fall in love with your hands all over again.",
-  
-    service7: "Take off shellac and Redone Gel Polish on Feet",
+
+    service7: "Take off Shellac and Redone Gel Polish on Feet",
     service7Time: "40 mins",
-    service7Price: "25",
+    service7Price: "23",
     service7Description: "Our skilled technicians will expertly remove your shellac and expertly apply a new, fresh coat of gel polish for a pampered, polished look. Indulge in the self-care you deserve and show your feet some love with this rejuvenating treatment",
 
     service9: "Take off shellac and Redone Normal Polish on Hand",
@@ -1307,7 +1347,7 @@ const images = {
 
     service2: "Pedicure with normal polish",
     service2Time: "40 mins",
-    service2Price: "28",
+    service2Price: "35",
     service2Description: "A classic pedicure is all you need to take great care of your feet and nails. Includes scrub, dead skin, cuticle, massage, moisturise, shape, file and polish.",
   
     service3: "Gel Colour Luxury Pedicure",
@@ -1445,6 +1485,16 @@ const images = {
     service29Price: "50",
     service29Description: "",
 
+    service30: "Manicure with no colour",
+    service30Time: "20 mins",
+    service30Price: "12",
+    service30Description: "",
+
+    service31: "Pedicure with no colour",
+    service31Time: "30 mins",
+    service31Price: "30",
+    service31Description: "",
+
   };
   
   const serviceList4 = {
@@ -1480,9 +1530,9 @@ const images = {
     service1Price: "3",
     service1Description: "The best looking nails are made with the best nail care services from our " + seoKeyword.seoKeyword1 +". Caring for your surface is the key to keeping it looking good for as long as possible. So come on over and treat yourself today.⁣",
 
-    service2: "Diamond Crystal x10 ",
+    service2: "Diamond Crystal x10 (from)",
     service2Time: "",
-    service2Price: "3",
+    service2Price: "4",
     service2Description: "Allow us to pamper your nails with an extra sparkle and shine. The diamond-like crystals will leave your nails looking stunning and unique, sure to make you feel confident and beautiful. Embrace your feminine side and love the skin you're in with this elegant and sophisticated addition to your nails",
 
     service3: "3D nail art (from)",
@@ -1507,7 +1557,7 @@ const images = {
 
     service7: "Nail Art (from)",
     service7Time: "",
-    service7Price: "3",
+    service7Price: "12",
     service7Description: "Indulge in the ultimate self-care experience with our Nail Art service. Discover the perfect way to express your personality and style through a customized design tailored to your taste. Our talented nail artists will turn your nails into a masterpiece, making you feel confident and beautiful from tip to toe. Embrace the latest fashion trends and indulge in the luxurious feeling of well-groomed nails. Love yourself and show off your new look with pride. Experience Nail Art and fall in love with your fabulous self.",
 
     service8: "Chrome",
@@ -1540,10 +1590,10 @@ const images = {
     service13Price: "8",
     service13Description: "Children need direct permission from their parents or guardians",
 
-
-
-
-
+    service14: "Multiple colours (from)",
+    service14Time: "",
+    service14Price: "3",
+    service14Description: "",
 
   }; 
   

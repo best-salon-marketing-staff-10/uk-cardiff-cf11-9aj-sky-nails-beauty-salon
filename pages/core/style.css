@@ -59,7 +59,7 @@
 */
   /*Chống copy nội dung trang, tải ảnh....
   */
-    
+    /*
   html{
     -youbkit-touch-callout: none; 
     -youbkit-user-select: none;   
@@ -261,7 +261,9 @@
 
   /*Các list dịch vụ mà ko hiển thị
   */
-
+  .desktop-about-us-carousel-image,
+  .carousel-image-1,
+  .customer-review,
   .services-list-4,
   .services-list-6,
   .services-list-7,

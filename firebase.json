@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "topnailsexeter",
+    "site": "skynailsbeautysalon",
     "public": "out",
     "ignore": [
       "firebase.json",
