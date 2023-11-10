@@ -50,7 +50,7 @@ export default function Service1(){
                         </h2>
                     </div> 
                     <div className="service-content-description">
-                        <p className="service-content-description">
+                        <p className="service-content-description-2">
                             {pageContent.serviceCategory1Description}   
                         </p>
                     </div>

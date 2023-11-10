@@ -49,7 +49,7 @@ export default function Service3(){
                         </h2>
                     </div> 
                     <div className="service-content-description">
-                        <p className="service-content-description">
+                        <p className="service-content-description-2">
                             {pageContent.serviceCategory3Description} 
                         </p>
                     </div>
