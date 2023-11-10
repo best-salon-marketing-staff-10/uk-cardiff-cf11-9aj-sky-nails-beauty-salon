@@ -27,8 +27,7 @@ export default function MobileContent(){
         <>
             <div className="mobile-content">
                 <div className="first-screen-block">
-                    <img className="first-screen-block-anh" alt={imageAlt.mobileCarouselImage1Alt} 
-                            src={images.mobileCarouselImage1} />
+                    <img className="first-screen-block-anh" alt={imageAlt.mobileCarouselImage1Alt} src={images.mobileCarouselImage1} />
                     <div className="first-screen-block-bottom">
                         <h1 className="first-screen-block-title">
                             {pageContent.carouselHeading}
@@ -100,7 +99,7 @@ export default function MobileContent(){
                     </div>
                 </div>
             </div>
-            
+         
         </>
     )
 }

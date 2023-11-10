@@ -719,15 +719,15 @@ const button = {
 
 const images = {
   //Ảnh ở Homepage carousel
-  mobileCarouselImage1: "/images/mobile-nail-salon-happy-customer-1.jpg",
+  mobileCarouselImage1: "/images/mobile-nail-salon-happy-customer-1-1.jpg",
   mobileCarouselImage2: "/images/mobile-nail-salon-happy-customer-2.jpg",
   mobileCarouselImage3: "/images/mobile-nail-salon-happy-customer-3.jpg",
 
-  tabletCarouselImage1: "/images/tablet-nail-salon-happy-customer-1.jpg",
+  tabletCarouselImage1: "/images/tablet-nail-salon-happy-customer-1-1.jpg",
   tabletCarouselImage2: "/images/tablet-nail-salon-happy-customer-2.jpg",
   tabletCarouselImage3: "/images/tablet-nail-salon-happy-customer-3.jpg",
 
-  desktopCarouselImage1: "/images/desktop-nail-salon-happy-customer-1.jpg",
+  desktopCarouselImage1: "/images/desktop-nail-salon-happy-customer-1-1.jpg",
   desktopCarouselImage2: "/images/desktop-nail-salon-happy-customer-2.jpg",
   desktopCarouselImage3: "/images/desktop-nail-salon-happy-customer-3.jpg",
       //Ảnh ở Homepage khi vuốt xuống
